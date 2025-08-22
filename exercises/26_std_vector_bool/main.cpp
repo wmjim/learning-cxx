@@ -1,8 +1,8 @@
 ﻿#include "../exercise.h"
 #include <vector>
 
-// READ: std::vector <https://zh.cppreference.com/w/cpp/container/vector_bool>
-// READ: 模板特化 <https://zh.cppreference.com/w/cpp/language/template_specialization>
+// READ: std::vector <https://cppreference.cn/w/cpp/container/vector_bool>
+// READ: 模板特化 <https://cppreference.cn/w/cpp/language/template_specialization>
 
 // TODO: 将下列 `?` 替换为正确的代码
 int main(int argc, char **argv) {

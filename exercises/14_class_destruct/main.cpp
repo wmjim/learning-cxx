@@ -1,6 +1,6 @@
 #include "../exercise.h"
 
-// READ: 析构函数 <https://zh.cppreference.com/w/cpp/language/destructor>
+// READ: 析构函数 <https://cppreference.cn/w/cpp/language/destructor>
 // READ: RAII <https://learn.microsoft.com/zh-cn/cpp/cpp/object-lifetime-and-resource-management-modern-cpp?view=msvc-170>
 
 /// @brief 任意缓存容量的斐波那契类型。

@@ -1,6 +1,6 @@
 ﻿#include "../exercise.h"
 
-// READ: 数组 <https://zh.cppreference.com/w/cpp/language/array>
+// READ: 数组 <https://cppreference.cn/w/cpp/language/array>
 
 unsigned long long arr[90]{0, 1};
 unsigned long long fibonacci(int i) {

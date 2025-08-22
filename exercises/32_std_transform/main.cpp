@@ -3,8 +3,8 @@
 #include <string>
 #include <vector>
 
-// READ: `std::transform` <https://zh.cppreference.com/w/cpp/algorithm/transform>
-// READ: `std::vector::begin` <https://zh.cppreference.com/w/cpp/container/vector/begin>
+// READ: `std::transform` <https://cppreference.cn/w/cpp/algorithm/transform>
+// READ: `std::vector::begin` <https://cppreference.cn/w/cpp/container/vector/begin>
 
 int main(int argc, char **argv) {
     std::vector<int> val{8, 13, 21, 34, 55};

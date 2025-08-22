@@ -2,7 +2,7 @@
 #include <array>
 #include <cstring>
 
-// READ: std::array <https://zh.cppreference.com/w/cpp/container/array>
+// READ: std::array <https://cppreference.cn/w/cpp/container/array>
 
 // TODO: 将下列 `?` 替换为正确的代码
 int main(int argc, char **argv) {

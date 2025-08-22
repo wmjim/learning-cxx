@@ -1,6 +1,6 @@
 #include "../exercise.h"
 
-// READ: 枚举类型 <https://zh.cppreference.com/w/cpp/language/enum>
+// READ: 枚举类型 <https://cppreference.cn/w/cpp/language/enum>
 
 // `enum` 是 C 的兼容类型，本质上其对应类型的常量。
 // 在 `enum` 中定义标识符等价于定义 constexpr 常量，
@@ -24,7 +24,7 @@ enum class Color : int {
 };
 
 ColorEnum convert_by_pun(Color c) {
-    // READ: <https://zh.cppreference.com/w/cpp/language/union>
+    // READ: <https://cppreference.cn/w/cpp/language/union>
     // `union` 表示在同一内存位置存储的不同类型的值。
     // 其常见用法是实现类型双关转换，即将一种类型的值转换为另一种无关类型的值。
     // 但这种写法实际上仅在 C 语言良定义，在 C++ 中是未定义行为。

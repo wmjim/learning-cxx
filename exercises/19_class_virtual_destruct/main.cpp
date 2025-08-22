@@ -1,7 +1,7 @@
 #include "../exercise.h"
 
-// READ: 静态字段 <https://zh.cppreference.com/w/cpp/language/static>
-// READ: 虚析构函数 <https://zh.cppreference.com/w/cpp/language/destructor>
+// READ: 静态字段 <https://cppreference.cn/w/cpp/language/static>
+// READ: 虚析构函数 <https://cppreference.cn/w/cpp/language/destructor>
 
 struct A {
     // TODO: 正确初始化静态字段

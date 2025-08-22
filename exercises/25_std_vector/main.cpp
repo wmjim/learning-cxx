@@ -2,7 +2,7 @@
 #include <cstring>
 #include <vector>
 
-// READ: std::vector <https://zh.cppreference.com/w/cpp/container/vector>
+// READ: std::vector <https://cppreference.cn/w/cpp/container/vector>
 
 // TODO: 将下列 `?` 替换为正确的代码
 int main(int argc, char **argv) {

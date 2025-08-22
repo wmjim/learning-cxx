@@ -1,6 +1,6 @@
 #include "../exercise.h"
 
-// READ: 派生类 <https://zh.cppreference.com/w/cpp/language/derived_class>
+// READ: 派生类 <https://cppreference.cn/w/cpp/language/derived_class>
 
 static int i = 0;
 

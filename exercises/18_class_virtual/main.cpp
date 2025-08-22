@@ -1,6 +1,6 @@
 #include "../exercise.h"
 
-// READ: 虚函数 <https://zh.cppreference.com/w/cpp/language/virtual>
+// READ: 虚函数 <https://cppreference.cn/w/cpp/language/virtual>
 
 struct A {
     virtual char virtual_name() const {
@@ -11,7 +11,7 @@ struct A {
     }
 };
 struct B : public A {
-    // READ: override <https://zh.cppreference.com/w/cpp/language/override>
+    // READ: override <https://cppreference.cn/w/cpp/language/override>
     char virtual_name() const override {
         return 'B';
     }
@@ -20,7 +20,7 @@ struct B : public A {
     }
 };
 struct C : public B {
-    // READ: final <https://zh.cppreference.com/w/cpp/language/final>
+    // READ: final <https://cppreference.cn/w/cpp/language/final>
     char virtual_name() const final {
         return 'C';
     }
@@ -78,5 +78,5 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-// READ: 扩展阅读-纯虚、抽象 <https://zh.cppreference.com/w/cpp/language/abstract_class>
-// READ: 扩展阅读-虚继承 <https://zh.cppreference.com/w/cpp/language/derived_class>
+// READ: 扩展阅读-纯虚、抽象 <https://cppreference.cn/w/cpp/language/abstract_class>
+// READ: 扩展阅读-虚继承 <https://cppreference.cn/w/cpp/language/derived_class>

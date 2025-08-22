@@ -1,8 +1,8 @@
 ﻿#include "../exercise.h"
 #include <memory>
 
-// READ: `std::shared_ptr` <https://zh.cppreference.com/w/cpp/memory/shared_ptr>
-// READ: `std::weak_ptr` <https://zh.cppreference.com/w/cpp/memory/weak_ptr>
+// READ: `std::shared_ptr` <https://cppreference.cn/w/cpp/memory/shared_ptr>
+// READ: `std::weak_ptr` <https://cppreference.cn/w/cpp/memory/weak_ptr>
 
 // TODO: 将下列 `?` 替换为正确的值
 int main(int argc, char **argv) {

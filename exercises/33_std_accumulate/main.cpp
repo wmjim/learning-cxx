@@ -1,7 +1,7 @@
 ﻿#include "../exercise.h"
 #include <numeric>
 
-// READ: `std::accumulate` <https://zh.cppreference.com/w/cpp/algorithm/accumulate>
+// READ: `std::accumulate` <https://cppreference.cn/w/cpp/algorithm/accumulate>
 
 int main(int argc, char **argv) {
     using DataType = float;

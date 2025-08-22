@@ -1,8 +1,8 @@
 ﻿#include "../exercise.h"
 #include <map>
 
-// READ: `std::map` <https://zh.cppreference.com/w/cpp/container/map>
-// READ: `std::unordered_map` <https://zh.cppreference.com/w/cpp/container/unordered_map>
+// READ: `std::map` <https://cppreference.cn/w/cpp/container/map>
+// READ: `std::unordered_map` <https://cppreference.cn/w/cpp/container/unordered_map>
 
 template<class k, class v>
 bool key_exists(std::map<k, v> const &map, k const &key) {

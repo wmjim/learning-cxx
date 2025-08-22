@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-// READ: `std::unique_ptr` <https://zh.cppreference.com/w/cpp/memory/unique_ptr>
+// READ: `std::unique_ptr` <https://cppreference.cn/w/cpp/memory/unique_ptr>
 
 std::vector<std::string> RECORDS;
 

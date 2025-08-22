@@ -1,6 +1,6 @@
 ﻿#include "../exercise.h"
 
-// READ: 函数模板 <https://zh.cppreference.com/w/cpp/language/function_template>
+// READ: 函数模板 <https://cppreference.cn/w/cpp/language/function_template>
 // TODO: 将这个函数模板化
 int plus(int a, int b) {
     return a + b;

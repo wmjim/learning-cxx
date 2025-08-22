@@ -1,6 +1,6 @@
 #include "../exercise.h"
 
-// READ: 有 cv 限定符的成员函数 <https://zh.cppreference.com/w/cpp/language/member_functions>
+// READ: 有 cv 限定符的成员函数 <https://cppreference.cn/w/cpp/language/member_functions>
 
 struct Fibonacci {
     int numbers[11];
