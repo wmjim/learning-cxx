@@ -1,4 +1,5 @@
 ﻿#include "../exercise.h"
+#include <bits/types/cookie_io_functions_t.h>
 #include <cstring>
 // READ: 类模板 <https://cppreference.cn/w/cpp/language/class_template>
 
@@ -10,6 +11,10 @@ struct Tensor4D {
     Tensor4D(unsigned int const shape_[4], T const *data_) {
         unsigned int size = 1;
         // TODO: 填入正确的 shape 并计算 size
+        for (int i = 0; i < 4; ++i) {
+            shape[i] = shape_[i];
+            size *= shape[i];
+        }
         data = new T[size];
         std::memcpy(data, data_, size * sizeof(T));
     }
@@ -28,6 +33,48 @@ struct Tensor4D {
     // 则 `this` 与 `others` 相加时，3 个形状为 `[1, 2, 1, 4]` 的子张量各自与 `others` 对应项相加。
     Tensor4D &operator+=(Tensor4D const &others) {
         // TODO: 实现单向广播的加法
+        // 1. 检查广播兼容性
+        for (int i = 0; i < 4; ++i) {
+            if (others.shape[i] != 1 && others.shape[i] != this->shape[i]) {
+                throw std::invalid_argument("不兼容的张量形状，无法广播");
+            }
+        }
+
+        // 2. 计算步长 (将4D索引映射到线性内存的偏移量)
+        unsigned int this_strides[4] = {1, 1, 1, 1};
+        unsigned int others_strides[4] = {1, 1, 1, 1};
+
+        // 计算this的步长 (从后往前乘)
+        for (int i = 2; i >= 0; --i) {
+            this_strides[i] = this_strides[i + 1] * this->shape[i + 1];
+        }
+
+        // 计算others的步长 (广播维度步长为0)
+        for (int i = 2; i >= 0; --i) {
+            others_strides[i] = others.shape[i + 1] == 1 ? 0 : others_strides[i + 1] * others.shape[i + 1];
+        }
+
+        // 3. 执行广播加法
+        unsigned int total_elements = this_strides[0] * this->shape[0];
+        for (unsigned int idx = 0; idx < total_elements; ++idx) {
+            // 计算当前索引在4D空间中的坐标
+            unsigned int coords[4];
+            unsigned int temp = idx;
+            for (int i = 0; i < 4; ++i) {
+                coords[i] = temp / this_strides[i];
+                temp %= this_strides[i];
+            }
+
+            // 计算others的对应线性索引
+            unsigned int others_idx = 0;
+            for (int i = 0; i < 4; ++i) {
+                others_idx += coords[i] * others_strides[i];
+            }
+
+            // 元素相加
+            this->data[idx] += others.data[others_idx];
+        }
+
         return *this;
     }
 };
